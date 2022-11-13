@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.results-title {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.card {
+  border: 1px solid red;
+  margin: 2rem;
+  padding: 2rem;
+}
