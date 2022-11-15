@@ -12,7 +12,7 @@ const Results: FC<ResultsProps> = ({ results, keyword }) => {
   return (
     <div className="results">
       <h2 className="results-title">{keyword}</h2>
-      {results.map((item: IResults) => <Card results={item}/>)}
+      {results.map((item: IResults) => <Card results={item} keyword={keyword}/>)}
     </div>
   )
 }
