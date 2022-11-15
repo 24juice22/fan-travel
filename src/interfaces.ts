@@ -17,3 +17,8 @@ export interface ILocation {
     lat: string;
     long: string;
 }
+
+export interface IWeather {
+    location: string;
+    temp: number;
+}
