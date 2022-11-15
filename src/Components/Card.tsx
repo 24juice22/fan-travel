@@ -18,12 +18,8 @@ const Card = ({ results, keyword }: CardProps) => {
       })
   },[keyword])
 
-  const style = {
-    backgroundImage: `url(${results.image})`
-  }
-
   return (
-    <div className="card" style={style}>
+    <div className="card">
         <h3>{results.name}</h3>
         <p>{results.locationName}</p>
         <p>{results.city}, {results.state}</p>
