@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { IResults, IWeather } from "../interfaces"
+import { IResults, IBrewery } from "../interfaces"
+import Brew from "./Brew"
 
 interface CardProps {
     results: IResults;
@@ -7,14 +8,14 @@ interface CardProps {
 }
 
 const Card = ({ results, keyword }: CardProps) => {
-  const [weather, setWeather] = useState<IWeather>({} as IWeather)
+  const [brewery, setBrewery] = useState<IBrewery[]>([]);
 
   useEffect(() => {
-    fetch(`https://weatherdbi.herokuapp.com/data/weather/${results.city}`)
+    fetch(`https://api.openbrewerydb.org/breweries?by_dist=${results.location.lat},${results.location.long}&by_type=brewpub&per_page=3`)
       .then(res=>res.json())
       .then(data=> {
         console.log(data)
-        setWeather({location: data.region, temp: data.currentConditions.temp.f})
+        setBrewery(data)
       })
   },[keyword])
 
@@ -26,9 +27,13 @@ const Card = ({ results, keyword }: CardProps) => {
         <p>{results.date}</p>
         <p>{results.location.lat}</p>
         <p>{results.location.long}</p>
-        {weather.location !== "" && <p>{weather.location} Temp: {weather.temp} F</p>}
         <p>Lowest Price: ${results.priceMin}</p>
-        <p>Highest Price: ${results.priceMax}</p>
+        <div className="breweries">
+          <h3>BrewPub Snapshot</h3>
+          <div className="brewCards">
+            {brewery.map((item: IBrewery) => <Brew brewery={item} />)}
+          </div>
+        </div>
     </div>
   )
 }
