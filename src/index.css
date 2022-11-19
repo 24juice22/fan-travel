@@ -22,3 +22,16 @@ code {
   margin: 2rem;
   padding: 2rem;
 }
+
+.brewCards {
+  display: flex;
+}
+
+.brewCard {
+  border: 1px solid green;
+  text-align: center;
+}
+
+.breweries {
+  text-align: center;
+}
