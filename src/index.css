@@ -18,20 +18,20 @@ code {
 }
 
 .card {
-  border: 1px solid red;
   margin: 2rem;
-  padding: 2rem;
-}
-
-.brewCards {
-  display: flex;
 }
 
 .brewCard {
-  border: 1px solid green;
+  background-color: #E040FB;
   text-align: center;
+  margin: .5rem;
 }
 
 .breweries {
   text-align: center;
+}
+
+.button-primary {
+  background-color: #D500F9;
+  color: white;
 }

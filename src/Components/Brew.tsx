@@ -7,7 +7,10 @@ interface BrewProps {
 
 const Brew = ({brewery}: BrewProps) => {
   return (
-    <p className="brewCard">{brewery.name} {brewery.city}</p>
+    <div className="brewCard">
+      <p>{brewery.name}</p> 
+      <p>{brewery.city}</p>
+    </div>
   )
 }
 
