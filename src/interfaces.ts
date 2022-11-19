@@ -3,9 +3,7 @@ export interface IResults {
     name: string;
     date: string;
     time: string;
-    image: string;
     priceMin: number,
-    priceMax: number,
     seatMap: string;
     locationName: string;
     city: string;
