@@ -18,7 +18,7 @@ export interface ILocation {
     long: string;
 }
 
-export interface IWeather {
-    location: string;
-    temp: number;
+export interface IBrewery {
+    city: string;
+    name: string;
 }
