@@ -3,13 +3,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background: linear-gradient(to right, #D500F9, #FF3D00);
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  color: white;
+  fill: white;
 }
 
 .results-title {
@@ -21,17 +28,59 @@ code {
   margin: 2rem;
 }
 
+.card-header {
+  background: linear-gradient(to right, #D500F9, #FF3D00);
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-footer {
+  padding-bottom: 2rem;
+}
+
+.card-title {
+  margin: .5rem 0 1rem;
+}
+
+.low-price {
+  color: #FF3D00;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
 .brewCard {
-  background-color: #E040FB;
-  text-align: center;
-  margin: .5rem;
+  background-color: #FF3D00;
+  margin: .5rem auto;
+  border-radius: .5rem;
+  width: 75%;
+}
+
+.brewCard:hover {
+  background-color: #D500F9;
 }
 
 .breweries {
   text-align: center;
 }
 
+.brewCard-name {
+  font-size: 1.2rem;
+}
+
+.brewCard-city {
+  color: black;
+}
+
 .button-primary {
   background-color: #D500F9;
   color: white;
+}
+
+.continue {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1.1rem;
 }
