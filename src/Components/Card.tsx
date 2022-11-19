@@ -17,24 +17,25 @@ const Card = ({ results, keyword }: CardProps) => {
         console.log(data)
         setBrewery(data)
       })
-  },[keyword])
+  },[results])
 
   return (
-    <div className="card text-center">
-        <div  className="card-header text-white bg-dark">{results.date}</div>
+    <div className="card text-center border">
+        <div  className="card-header text-white">{results.date}</div>
         <div className="card-body">
           <h3 className="card-title">{results.name}</h3>
           <p className="card-text">{results.locationName}</p>
           <p className="card-text">{results.city}, {results.state}</p>
-          <p className="card-text">Lowest Price Found ${results.priceMin}</p>
+          <p className="card-text low-price">Lowest Price Found ${results.priceMin}</p>
           <a href="#" className="btn button-primary">Buy Tickets</a>
         </div>
         <div className="card-footer text-white bg-dark breweries">
           <h3 className="card-title">BrewPub Snapshot</h3>
+          <p className="card-subtitle">Click To View Website</p>
           <div className="brewCards">
             {brewery.map((item: IBrewery) => <Brew brewery={item} />)}
           </div>
-          <a href="#" className="btn button-primary">More Breweries</a>
+          <a href="#" className="btn continue">●●●</a>
         </div>
     </div>
   )
