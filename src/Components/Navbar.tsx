@@ -2,12 +2,13 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <div className="container-fluid">
-      <nav className="navbar navbar-expand-lg navbar-info">
+    
+    <nav className="navbar navbar-expand-lg navbar-info">
+      <div className="container-fluid">
         <a className="navbar-brand" href="#">FanTravel</a>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler navbar-dark"
           type="button"
           data-toggle="collapse"
           data-target="#navbarToggler"
@@ -31,8 +32,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   )
 }
 
