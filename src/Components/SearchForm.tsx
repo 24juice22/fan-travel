@@ -21,7 +21,7 @@ const SearchForm = ({ setKeyword }: SearchFormProps) => {
         <div>
             <input type="text" className="form-control" id="keywordInput"/>
         </div>
-        <button type="submit" className="btn btn-primary">Search</button>
+        <button type="submit" className="btn button-primary">Search</button>
     </form>
   )
 }
