@@ -8,8 +8,8 @@ interface BrewProps {
 const Brew = ({brewery}: BrewProps) => {
   return (
     <div className="brewCard">
-      <p>{brewery.name}</p> 
-      <p>{brewery.city}</p>
+      <p className="brewCard-name">{brewery.name}</p> 
+      <p className="brewCard-city">{brewery.city}</p>
     </div>
   )
 }
