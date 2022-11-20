@@ -20,7 +20,7 @@ const Card = ({ results, keyword }: CardProps) => {
   },[results])
 
   return (
-    <div className="card text-center border">
+    <div className="card text-center border col-md-5 col-lg-5 col-xl-3">
         <div  className="card-header text-white">{results.date}</div>
         <div className="card-body">
           <h3 className="card-title">{results.name}</h3>

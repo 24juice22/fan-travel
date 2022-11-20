@@ -24,8 +24,14 @@ body {
   font-size: 4rem;
 }
 
+.row {
+  justify-content: center;
+  margin: 1rem 0;
+}
+
 .card {
-  margin: 2rem;
+  padding: 0;
+  margin: 2rem 1.25rem;
 }
 
 .card-header {
@@ -37,6 +43,7 @@ body {
 
 .card-footer {
   padding-bottom: 2rem;
+  min-height: 433.575px;
 }
 
 .card-title {
