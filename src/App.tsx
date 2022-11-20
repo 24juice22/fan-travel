@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from 'react';
 import './index.css';
 import Navbar from './Components/Navbar';
+import Hero from './Components/Hero'
 import SearchForm from './Components/SearchForm';
 import Results from './Components/Results';
 import { IResults } from './interfaces';
@@ -37,6 +38,7 @@ const App: FC = () => {
   return (
     <div className="App">
       <Navbar />
+      <Hero />
       <SearchForm setKeyword={setKeyword} />
       <Results results={results} keyword={keyword}/>
     </div>
