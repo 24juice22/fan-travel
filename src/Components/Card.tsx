@@ -24,8 +24,7 @@ const Card = ({ results, keyword }: CardProps) => {
         <div  className="card-header text-white">{results.date}</div>
         <div className="card-body">
           <h3 className="card-title">{results.name}</h3>
-          <p className="card-text">{results.locationName}</p>
-          <p className="card-text">{results.city}, {results.state}</p>
+          <p className="card-text">{results.locationName} in {results.city}, {results.state}</p>
           <p className="card-text low-price">Lowest Price Found ${results.priceMin}</p>
           <a href="#" className="btn button-primary">Buy Tickets</a>
         </div>
