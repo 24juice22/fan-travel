@@ -44,6 +44,11 @@ body {
   z-index: 10;
 }
 
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
 .row {
   padding: 0 1rem;
 }

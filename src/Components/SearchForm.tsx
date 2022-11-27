@@ -17,9 +17,9 @@ const SearchForm = ({ setKeyword }: SearchFormProps) => {
   }
 
   return (
-    <form onSubmit={keywordSubmit}>
+    <form className="search-form" onSubmit={keywordSubmit}>
         <div>
-            <input type="text" className="form-control" id="keywordInput"/>
+            <input type="text" className="form-control" id="keywordInput" placeholder="Enter keyword here..."/>
         </div>
         <button type="submit" className="btn button-primary">Search</button>
     </form>
