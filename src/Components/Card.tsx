@@ -15,7 +15,13 @@ const Card = ({ results, keyword }: CardProps) => {
       .then(res=>res.json())
       .then(data=> {
         console.log(data)
-        setBrewery(data)
+        setBrewery(data.map((item: any) => {
+          return {
+            city: item.city,
+            name: item.name,
+            website: item.website_url
+          }
+        }))
       })
   },[results])
 
