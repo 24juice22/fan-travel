@@ -73,6 +73,11 @@ body {
   margin: 2rem 1.25rem;
 }
 
+.card:hover {
+  transform: scale(1.04);
+  transition-duration: .5s;
+}
+
 .card-header {
   background: linear-gradient(to right, #D500F9, #FF3D00);
   padding: 1rem;
