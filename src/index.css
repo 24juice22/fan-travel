@@ -95,6 +95,7 @@ body {
   margin: .5rem auto;
   border-radius: .5rem;
   width: 75%;
+  cursor: pointer;
 }
 
 .brewCard:hover {
