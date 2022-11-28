@@ -19,4 +19,5 @@ export interface ILocation {
 export interface IBrewery {
     city: string;
     name: string;
+    website: string;
 }
