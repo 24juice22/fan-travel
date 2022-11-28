@@ -56,6 +56,11 @@ body {
 .results-title {
   text-align: center;
   font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.results-title span {
+  color: #D500F9;
 }
 
 .row {
