@@ -6,11 +6,18 @@ interface BrewProps {
 }
 
 const Brew = ({brewery}: BrewProps) => {
+  
+  let breweryName = brewery.name
+  if (brewery.name.split("").includes("-"))
+    breweryName = brewery.name.split("-")[0]
+  if (brewery.name.split("").includes("/"))
+    breweryName = brewery.name.split("/")[0]
+
   return (
-    <div className="brewCard">
-      <p className="brewCard-name">{brewery.name}</p> 
+    <a className="btn brewCard" href={brewery.website} target="_blank">
+      <p className="brewCard-name">{breweryName}</p> 
       <p className="brewCard-city">{brewery.city}</p>
-    </div>
+    </a>
   )
 }
 
