@@ -1,10 +1,6 @@
 import React from 'react'
 
 const Hero = () => {
-
-  const backgroundImage = {
-
-  }
     
   return (
     <div className="hero">
